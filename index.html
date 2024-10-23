@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción</title>
+</head>
+<body>
+    <h1>Encuesta de Satisfacción del Cliente</h1>
+    <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="satisfaccion">¿Qué tan satisfecho estás con nuestro servicio?</label><br>
+        <select id="satisfaccion" name="satisfaccion">
+            <option value="muy_satisfecho">Muy Satisfecho</option>
+            <option value="satisfecho">Satisfecho</option>
+            <option value="neutral">Neutral</option>
+            <option value="insatisfecho">Insatisfecho</option>
+            <option value="muy_insatisfecho">Muy Insatisfecho</option>
+        </select><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
